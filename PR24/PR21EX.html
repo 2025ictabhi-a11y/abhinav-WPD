@@ -1,0 +1,93 @@
+﻿<html>
+<head>
+    <title>HTML Forms</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 320px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2575fc;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .options {
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background: #1a5ed8;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+        <h2>HTML Forms</h2>
+
+        <form>
+
+            <label>First name:</label>
+            <input type="text" name="firstname" value="abc">
+
+            <label>Last name:</label>
+            <input type="text" name="lastname" value="xyz">
+
+            <div class="options">
+                <input type="radio" name="language"> HTML <br>
+                <input type="radio" name="language"> CSS <br>
+                <input type="radio" name="language"> JavaScript
+            </div>
+
+            <div class="options">
+                <input type="checkbox"> I have a bike <br>
+                <input type="checkbox"> I have a car <br>
+                <input type="checkbox"> I have a boat
+            </div>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+</body>
+</html>

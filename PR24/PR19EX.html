@@ -1,0 +1,73 @@
+﻿<html>
+<head>
+    <title>PR.19.EX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        table {
+            width: 650px;
+            margin: 50px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Header Color */
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* First Column Color */
+        .first-col {
+            background-color: #ffe6cc;
+        }
+
+        /* Middle Cells Color */
+        .middle-col {
+            background-color: #e6f2ff;
+        }
+
+        /* Bottom Row Color */
+        .bottom-row {
+            background-color: #d9ead3;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="first-col">Row 1 Cell 1</td>
+            <td class="middle-col">Row 1 Cell 2</td>
+            <td class="middle-col">Row 1 Cell 3</td>
+        </tr>
+
+        <tr>
+            <td class="middle-col">Row 2 Cell 2</td>
+            <td class="middle-col">Row 2 Cell 3</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="bottom-row">Row 3 Cell 1</td>
+        </tr>
+    </table>
+
+</body>
+</html>
